@@ -1,0 +1,65 @@
+@import url(../../node_modules/sanitize.css/);
+
+$color-primary: #ff006a;
+$text: #222;
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 243, 234);
+  font-size: 22px;
+  font-family: "Lora", serif;
+  color: $text;
+}
+
+a {
+  color: $text;
+  border-bottom: 2px dashed $color-primary;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    border-bottom-style: solid;
+  }
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  &__banner {
+    flex: 0 0 50%;
+    background-image: url("../pic.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+  }
+  &__rsvp {
+    display: inline-block;
+    width: 100px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    background: $color-primary;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.1s all linear;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+}
