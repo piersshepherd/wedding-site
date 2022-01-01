@@ -2,7 +2,7 @@
 
 $breakpoint-xs: 768px;
 
-$color-primary: #ff006a;
+$color-primary: #8900db;
 $text: #222;
 
 html,
@@ -36,7 +36,8 @@ a {
 
 .section {
   max-width: 90%;
-  margin: 6rem auto;
+  margin: 0 auto;
+  padding: 3rem 0;
   &__title {
     margin-bottom: 4rem;
     text-align: center;
@@ -72,7 +73,7 @@ a {
       background-position: 50% 50%;
     }
     &__content {
-      flex: 0 0 50%;
+      flex: 1;
     }
   }
   &__rsvp {
@@ -95,14 +96,12 @@ a {
 
 .timeline {
   &__event {
-    display: flex;
+    display: block;
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
   &__date-time {
-    flex: 0 0 200px;
-    padding-right: 2rem;
-    text-align: right;
+    text-align: left;
   }
 
   &__title {
@@ -117,5 +116,14 @@ a {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+
+    &__event {
+      display: flex;
+    }
+    &__date-time {
+      flex: 0 0 200px;
+      margin-right: 2rem;
+      text-align: right;
+    }
   }
 }

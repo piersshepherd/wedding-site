@@ -16,7 +16,7 @@ body {
 
 a {
   color: #222;
-  border-bottom: 2px dashed #ff006a;
+  border-bottom: 2px dashed #8900db;
   text-decoration: none;
 }
 
@@ -25,12 +25,13 @@ a:hover, a:focus {
 }
 
 .color-primary {
-  color: #ff006a;
+  color: #8900db;
 }
 
 .section {
   max-width: 90%;
-  margin: 6rem auto;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
 .section__title {
@@ -93,9 +94,9 @@ a:hover, a:focus {
     background-position: 50% 50%;
   }
   .app-intro__content {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
@@ -105,7 +106,7 @@ a:hover, a:focus {
   margin-top: 0.5rem;
   padding: 0.5rem;
   color: white;
-  background: #ff006a;
+  background: #8900db;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -119,19 +120,13 @@ a:hover, a:focus {
 }
 
 .timeline__event {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
 .timeline__date-time {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 200px;
-          flex: 0 0 200px;
-  padding-right: 2rem;
-  text-align: right;
+  text-align: left;
 }
 
 .timeline__title {
@@ -148,6 +143,18 @@ a:hover, a:focus {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .timeline__event {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .timeline__date-time {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+    margin-right: 2rem;
+    text-align: right;
   }
 }
 /*# sourceMappingURL=app.css.map */
