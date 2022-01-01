@@ -1,5 +1,7 @@
 @import url(../../node_modules/sanitize.css/);
 
+$breakpoint-xs: 768px;
+
 $color-primary: #ff006a;
 $text: #222;
 
@@ -32,19 +34,46 @@ a {
   color: $color-primary;
 }
 
-.app {
-  height: 100%;
+.section {
+  max-width: 90%;
+  margin: 6rem auto;
+  &__title {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    max-width: 800px;
+  }
+}
+
+.app-intro {
   display: flex;
+  flex-direction: column;
   &__banner {
-    flex: 0 0 50%;
+    flex: 0 0 auto;
+    height: 400px;
     background-image: url("../pic.jpg");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: top center;
   }
   &__content {
+    flex: 0 0 100%;
     display: flex;
     align-items: center;
     padding: 3rem;
+  }
+  @media (min-width: $breakpoint-xs) {
+    height: 100%;
+    flex-direction: row;
+    &__banner {
+      height: auto;
+      flex: 0 0 50%;
+      background-position: 50% 50%;
+    }
+    &__content {
+      flex: 0 0 50%;
+    }
   }
   &__rsvp {
     display: inline-block;
@@ -61,5 +90,32 @@ a {
     &:focus {
       transform: scale(1.1);
     }
+  }
+}
+
+.timeline {
+  &__event {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  &__date-time {
+    flex: 0 0 200px;
+    padding-right: 2rem;
+    text-align: right;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  &__location {
+    margin-top: 0;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

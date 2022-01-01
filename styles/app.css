@@ -28,23 +28,46 @@ a:hover, a:focus {
   color: #ff006a;
 }
 
-.app {
-  height: 100%;
+.section {
+  max-width: 90%;
+  margin: 6rem auto;
+}
+
+.section__title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section {
+    max-width: 800px;
+  }
+}
+
+.app-intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.app__banner {
+.app-intro__banner {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 400px;
   background-image: url("../pic.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: top center;
 }
 
-.app__content {
+.app-intro__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +77,29 @@ a:hover, a:focus {
   padding: 3rem;
 }
 
-.app__rsvp {
+@media (min-width: 768px) {
+  .app-intro {
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .app-intro__banner {
+    height: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    background-position: 50% 50%;
+  }
+  .app-intro__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+.app-intro__rsvp {
   display: inline-block;
   width: 100px;
   margin-top: 0.5rem;
@@ -68,8 +113,41 @@ a:hover, a:focus {
   transition: 0.1s all linear;
 }
 
-.app__rsvp:hover, .app__rsvp:focus {
+.app-intro__rsvp:hover, .app-intro__rsvp:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.timeline__event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.timeline__date-time {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.timeline__title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__location {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=app.css.map */
