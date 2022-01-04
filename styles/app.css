@@ -107,6 +107,7 @@ a:hover, a:focus {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     background-position: 50% 50%;
+    max-width: 600px;
   }
   .app-intro__content {
     -webkit-box-flex: 0;
