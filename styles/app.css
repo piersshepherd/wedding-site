@@ -20,12 +20,17 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   border-bottom-style: solid;
 }
 
 .color-primary {
   color: #8900db;
+}
+
+.text-small {
+  font-size: 0.9rem;
 }
 
 .section {
@@ -64,14 +69,14 @@ a:hover, a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .app-intro__banner {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 400px;
   background-image: url("../pic.jpg");
   background-size: cover;
@@ -80,14 +85,14 @@ a:hover, a:focus {
 
 .app-intro__content {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .app-intro__content-container {
@@ -98,21 +103,21 @@ a:hover, a:focus {
   .app-intro {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .app-intro__banner {
     height: auto;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
     background-position: 50% 50%;
     max-width: 600px;
   }
   .app-intro__content {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -130,9 +135,10 @@ a:hover, a:focus {
   transition: 0.1s all linear;
 }
 
-.app-intro__rsvp:hover, .app-intro__rsvp:focus {
+.app-intro__rsvp:hover,
+.app-intro__rsvp:focus {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .timeline__event {
@@ -167,8 +173,8 @@ a:hover, a:focus {
   }
   .timeline__date-time {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 200px;
-            flex: 0 0 200px;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
     margin-right: 2rem;
     text-align: right;
   }
